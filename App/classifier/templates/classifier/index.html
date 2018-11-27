@@ -1,0 +1,32 @@
+{% extends 'classifier/layout.html' %}
+
+{% block content %}
+<div class="container">
+    <h1 class="text-center">Đăng ảnh pet của bạn lên</h1>
+    <h2 class="text-center">Tôi sẽ đoán xem đấy là chó hay mèo :)</h2>
+
+    <div class="card text-center">
+        <img class="card-img-top" src="" hidden>
+        <div class="card-body">
+            <form action="" method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                    {{ form }}
+                </div>
+                <button type="submit" class="btn btn-primary">Đăng ảnh</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2017-2018 Company Name</p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Privacy</a></li>
+            <li class="list-inline-item"><a href="#">Terms</a></li>
+            <li class="list-inline-item"><a href="#">Support</a></li>
+        </ul>
+    </footer>
+</div>
+{% endblock %}

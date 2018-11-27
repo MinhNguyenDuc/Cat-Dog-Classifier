@@ -1,0 +1,8 @@
+{% extends 'classifier/layout.html' %}
+
+{% block content %}
+<div class="container">
+    <h1 class="text-center">Tôi đoán trong ảnh có con {{ type }}  </h1>
+    <img src="{{ image_url }}" class="rounded mx-auto d-block" alt="{{ type }}">
+   </div>
+{% endblock %}
